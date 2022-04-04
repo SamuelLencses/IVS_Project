@@ -85,8 +85,6 @@ void test_mul(void) {
 
 void test_dv(void) {
 
-    // Test dv by zero
-
     // Divide positive numbers
     TEST_CHECK_(dv(2, 2)==(1), "dv(%d,%d)==%d", 2, 2, 1);
     TEST_CHECK_(dv(0, 2)==(0), "dv(%d,%d)==%d", 0, 2, 0);
@@ -109,10 +107,42 @@ void test_dv(void) {
     TEST_CHECK_(absolute(dv(3.14, -4.2)-(-0.747619))<eps, "dv(%.2lf,%.1lf)==%.2lf", 3.14, -4.2, -0.74);
 }
 
+void test_fact(void) {
+
+    TEST_CHECK_(fact(0)==1, "fact(%d)==%d", 0, 1);
+    TEST_CHECK_(fact(5)==120, "fact(%d)==%d", 5, 120);
+    TEST_CHECK_(fact(10)==3628800, "fact(%d)==%d", 10, 3628800);
+
+}
+
+void test_power(void) {
+
+    // Zero power
+    TEST_CHECK_(power(4, 0)==(1), "power(%d,%d)==%d", 4, 0, 1);
+
+    // Zero to power of anything
+    TEST_CHECK_(power(0, 2)==(0), "power(%d,%d)==%d", 0, 2, 0);
+
+    // Power of positive numbers
+    TEST_CHECK_(power(2, 5)==(32), "power(%d,%d)==%d", 2, 5, 32);
+    TEST_CHECK_(power(2, 1)==(2), "power(%d,%d)==%d", 2, 1, 2);
+
+    // Power of negative numbers
+    TEST_CHECK_(power(-2, 2)==(4), "power(%d,%d)==%d", -2, -2, 4);
+    TEST_CHECK_(power(-2, 3)==(-8), "power(%d,%d)==%d", -2, 3, -8);
+    TEST_CHECK_(power(-2, 1)==(-2), "power(%d,%d)==%d", -2, 1, -2);
+
+    // Power of real numbers
+    TEST_CHECK_(absolute(power(3.14, 4)-97.211712)<eps, "power(%.2lf,%d)==%.2lf", 3.14, 4, 97.211712);
+    TEST_CHECK_(absolute(power(0.14, 3)-0.002744)<eps, "power(%.2lf,%d)==%.2lf", 0.14, 3, 0.002744);
+}
+
 TEST_LIST = {
         {"add(double, double);", test_add },
         {"sub(double, double);", test_sub },
         {"mul(double, double);", test_mul },
         {"dv(double, double)};", test_dv  },
+        {"fact(int);", test_fact          },
+        {"power(double, int);", test_power},
         {0} // Need to terminate with {0}
 };

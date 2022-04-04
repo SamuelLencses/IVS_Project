@@ -13,7 +13,7 @@ double mul(double a, double b) {
 }
 
 double dv(double a, double b) {
-    return a/b;
+    return 0;
 }
 
 int fact(int a) {
