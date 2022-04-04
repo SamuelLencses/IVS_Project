@@ -12,8 +12,8 @@ double mul(double a, double b) {
     return 0;
 }
 
-double div(double a, double b) {
-    return 0;
+double dv(double a, double b) {
+    return a/b;
 }
 
 int fact(int a) {
