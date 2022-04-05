@@ -1,7 +1,7 @@
 #include "acutest.h"
 #include "math_lib.h"
 
-double eps = 0.000001f;
+long double eps = 0.000001f;
 
 void test_add(void) {
 
@@ -85,6 +85,8 @@ void test_mul(void) {
 
 void test_dv(void) {
 
+    // TODO Division by zero
+
     // Divide positive numbers
     TEST_CHECK_(dv(2, 2)==(1), "dv(%d,%d)==%d", 2, 2, 1);
     TEST_CHECK_(dv(0, 2)==(0), "dv(%d,%d)==%d", 0, 2, 0);
@@ -109,15 +111,18 @@ void test_dv(void) {
 
 void test_fact(void) {
 
+    // Test of allowed numbers
     TEST_CHECK_(fact(0)==1, "fact(%d)==%d", 0, 1);
     TEST_CHECK_(fact(5)==120, "fact(%d)==%d", 5, 120);
     TEST_CHECK_(fact(10)==3628800, "fact(%d)==%d", 10, 3628800);
+
+    // TODO Test of disallowed numbers (.5, -1)
 
 }
 
 void test_power(void) {
 
-    // Zero power
+    // Zero power (maybe delete?)
     TEST_CHECK_(power(4, 0)==(1), "power(%d,%d)==%d", 4, 0, 1);
 
     // Zero to power of anything
@@ -135,14 +140,56 @@ void test_power(void) {
     // Power of real numbers
     TEST_CHECK_(absolute(power(3.14, 4)-97.211712)<eps, "power(%.2lf,%d)==%.2lf", 3.14, 4, 97.211712);
     TEST_CHECK_(absolute(power(0.14, 3)-0.002744)<eps, "power(%.2lf,%d)==%.2lf", 0.14, 3, 0.002744);
+
+    // TODO Check disallowed numbers (n=.5, n=-1, n=0)
+}
+
+void test_root(void) {
+
+    // Root of zero
+    TEST_CHECK_(root(0, 4)==(0), "root(%d,%d)==%d", 0, 4, 0);
+
+    // Root of positive numbers
+    TEST_CHECK_(root(8, 3)==(2), "root(%d,%d)==%d", 8, 3, 2);
+    TEST_CHECK_(root(4, 1)==(4), "root(%d,%d)==%d", 4, 1, 4);
+
+    // Root of negative numbers
+    TEST_CHECK_(root(-8, 3)==(-2), "root(%d,%d)==%d", -8, 3, -2);
+    TEST_CHECK_(root(-2, 1)==(-2), "root(%d,%d)==%d", -2, 1, -2);
+
+    // Root of real numbers
+    TEST_CHECK_(absolute(root(97.211712, 4)-3.14)<eps, "root(%.2lf,%d)==%.2lf", 97.211712, 4, 3.14);
+    TEST_CHECK_(absolute(root(0.002744, 3)-0.14)<eps, "root(%.2lf,%d)==%.2lf", 0.002744, 3, 0.14);
+
+    // TODO Check disallowed numbers (n=.5, n=-1, n=0)
+}
+
+void test_absolute(void) {
+
+    // Absolute value of 0
+    TEST_CHECK_(absolute(0)==(0), "absolute(%d) == %d", 0, 0);
+
+    // Absolute value of positive numbers
+    TEST_CHECK_(absolute(2)==(2), "absolute(%d) == %d", 2, 2);
+    TEST_CHECK_(absolute(384)==(384), "absolute(%d) == %d", 384, 384);
+
+    // Absolute value of negative numbers
+    TEST_CHECK_(absolute(-2)==(2), "absolute(%d) == %d", -2, 2);
+    TEST_CHECK_(absolute(-384)==(384), "absolute(%d) == %d", -384, 384);
+
+    // Absolute of real numbers
+    TEST_CHECK_(absolute(3.14)==(3.14), "absolute(%.2lf)==%.2lf", 3.14, 3.14);
+    TEST_CHECK_(absolute(-3.14)==(3.14), "absolute(%.2lf)==%.2lf", 3.14, 3.14);
 }
 
 TEST_LIST = {
-        {"add(double, double);", test_add },
-        {"sub(double, double);", test_sub },
-        {"mul(double, double);", test_mul },
-        {"dv(double, double)};", test_dv  },
-        {"fact(int);", test_fact          },
-        {"power(double, int);", test_power},
+        {"add(long double, long double);", test_add  },
+        {"sub(long double, long double);", test_sub  },
+        {"mul(long double, long double);", test_mul  },
+        {"dv(long double, long double)};", test_dv   },
+        {"fact(int);", test_fact           },
+        {"power(long double, int);", test_power },
+        {"root(long double, int);", test_root   },
+        {"absolute(long double);", test_absolute},
         {0} // Need to terminate with {0}
 };

@@ -1,18 +1,18 @@
 #include "math_lib.h"
 
-double add(double a, double b) {
+long double add(long double a, long double b) {
     return 0;
 }
 
-double sub(double a, double b) {
+long double sub(long double a, long double b) {
     return 0;
 }
 
-double mul(double a, double b) {
+long double mul(long double a, long double b) {
     return 0;
 }
 
-double dv(double a, double b) {
+long double dv(long double a, long double b) {
     return 0;
 }
 
@@ -20,14 +20,14 @@ int fact(int a) {
     return 0;
 }
 
-double power(double x, int n) {
+long double power(long double x, int n) {
     return 0;
 }
 
-double root(double x, int n) {
+long double root(long double x, int n) {
     return 0;
 }
 
-double absolute(double a) {
+long double absolute(long double a) {
     return 0;
 }

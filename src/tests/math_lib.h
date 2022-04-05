@@ -1,8 +1,8 @@
-double add(double, double);
-double sub(double, double);
-double mul(double, double);
-double dv(double, double);
+long double add(long double, long double);
+long double sub(long double, long double);
+long double mul(long double, long double);
+long double dv(long double, long double);
 int fact(int);
-double power(double, int);
-double root(double, int);
-double absolute(double);
+long double power(long double, int);
+long double root(long double, int);
+long double absolute(long double);
