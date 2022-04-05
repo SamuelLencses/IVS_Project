@@ -1,33 +1,49 @@
 #include "math_lib.h"
 
-long double add(long double a, long double b) {
-    return 0;
+result_d add(long double a, long double b) {
+    result_d res;
+    // Code here
+    return res;
 }
 
-long double sub(long double a, long double b) {
-    return 0;
+result_d sub(long double a, long double b) {
+    result_d res;
+    // Code here
+    return res;
 }
 
-long double mul(long double a, long double b) {
-    return 0;
+result_d mul(long double a, long double b) {
+    result_d res;
+    // Code here
+    return res;
 }
 
-long double dv(long double a, long double b) {
-    return 0;
+result_d dv(long double a, long double b) {
+    result_d res;
+    // Code here
+    return res;
 }
 
-int fact(int a) {
-    return 0;
+result_i fact(int a) {
+    result_i res;
+    // Code here
+    return res;
 }
 
-long double power(long double x, int n) {
-    return 0;
+result_d power(long double x, int n) {
+    result_d res;
+    // Code here
+    return res;
 }
 
-long double root(long double x, int n) {
-    return 0;
+result_d root(long double x, int n) {
+    result_d res;
+    // Code here
+    return res;
 }
 
-long double absolute(long double a) {
-    return 0;
+result_d absolute(long double a) {
+    result_d res;
+    // Code here
+    return res;
 }
