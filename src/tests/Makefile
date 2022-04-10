@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS= -std=c99
+CFLAGS = -std=c99
 
 main: main.o math_lib.o
 	$(CC) $(CFLAGS) -o main main.o math_lib.o

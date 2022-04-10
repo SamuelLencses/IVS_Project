@@ -1,6 +1,7 @@
 #include "acutest.h"
 #include "math_lib.h"
 
+// Epsilon
 long double eps = 0.000001f;
 
 void test_add(void) {
