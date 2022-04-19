@@ -6,8 +6,8 @@ Contents: main.c      - can be ignored for now
 	  Makefile    - I don't have to explain this one right?
 
 How to use: make           - to compile the math library
-            make math_test - to compile the tests
-	    make profiling - to compile the profiling
+            make test      - to compile and run the tests
+	    make profiling - to compile and run the profiling with the input from data_100.txt
 		
 	    make clean     - to clean the folder of .o and compiled files
 	    ./math_test    - run the tests
