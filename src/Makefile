@@ -10,5 +10,8 @@ math_test: math_test.o math_lib.o
 math_lib.o: math_lib.h math_lib.c
 	$(CC) $(CFLAGS) -c math_lib.c
 
+profiling: profiling.o math_lib.o
+	$(CC) $(CFLAGS) -o profiling profiling.o math_lib.o -lm
+
 clean:
-	rm -f core *.o main math_test
+	rm -f core *.o main math_test profiling
