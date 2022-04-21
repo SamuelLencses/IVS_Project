@@ -1,3 +1,8 @@
+// Tests for the math library
+// 2nd IVS Project
+// Author: Kryštof Paulík, xpauli08
+// Date: 2022-04-05
+
 #include "acutest.h"
 #include "math_lib.h"
 
