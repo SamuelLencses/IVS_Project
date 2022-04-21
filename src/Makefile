@@ -11,7 +11,7 @@ test: math_test.o math_lib.o
 math_lib.o: math_lib.h math_lib.c
 	$(CC) $(CFLAGS) -c math_lib.c
 
-profiling: profiling.o math_lib.o
+profile: profiling.o math_lib.o
 	$(CC) $(CFLAGS) -o profiling profiling.o math_lib.o -lm
 	./profiling <data_100.txt
 
