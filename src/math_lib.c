@@ -1,5 +1,6 @@
 #include "math_lib.h"
 
+
 // Soucet
 result_d add(long double a, long double b) {
     result_d res;
@@ -61,7 +62,31 @@ result_i fact(int a) {
 // Mocnina
 result_d power(long double x, int n) {
     result_d res;
-    // Code here
+    
+    if(n < 0)
+    {
+        res.fail = 1;
+        return res;
+    }
+    else if(n == 0)
+    {
+        res.fail = 1;
+        return res;
+    }
+    else if(n == 1)
+    {
+        res.ans = x;
+    }
+    else
+    {
+        long double base = x;
+        res.ans = x;
+        for(int i = 1; i < n; i++)
+        {
+            res.ans = res.ans * base;
+        }
+    }
+    res.fail = 0;
     return res;
 }
 
@@ -69,7 +94,39 @@ result_d power(long double x, int n) {
 result_d root(long double x, int n) {
     result_d res;
     // Code here
-    return res;
+    
+    // float m = (float) n;
+    // res.ans = (power(m ,1.0 / x).ans);
+    // return res;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    // if(x == 0 || x == 0.0)
+    // {
+    //     res.ans = 0;
+    //     res.fail = 0;
+    //     return res;
+    // }
+    // double base = x;
+    // for (int i = 0; i < 100; i++) {
+    //     result_d temp = power(base, n - 1);
+    //     x = 1.0 / n * ((n - 1) * base + x / temp.ans);
+    // }
+    // res.ans = x;
+    // res.fail = 0;
+    // return res;
+
+
+
 }
 
 // Absolutni hodnota
