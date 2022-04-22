@@ -131,9 +131,6 @@ void test_fact(void) {
 
 void test_power(void) {
 
-    // Zero power (maybe delete?)
-    TEST_CHECK_(power(4, 0).ans==(1), "power(%d,%d).ans==%d", 4, 0, 1);
-
     // Zero to power of anything
     TEST_CHECK_(power(0, 2).ans==(0), "power(%d,%d).ans==%d", 0, 2, 0);
 
@@ -152,7 +149,7 @@ void test_power(void) {
 
     // TODO Check disallowed numbers (ex. n=-1, n=0)
     TEST_CHECK_(power(-2, -1).fail==(1), "power(%d,%d).fail==%d", -2, -1, 1);
-    TEST_CHECK_(power(-2, 0).fail==(1), "power(%d,%d).ans==%d", -2, 0, 1);
+    TEST_CHECK_(power(-2, 0).fail==(1), "power(%d,%d).fail==%d", -2, 0, 1);
 }
 
 void test_root(void) {
