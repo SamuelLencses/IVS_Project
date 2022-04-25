@@ -162,7 +162,7 @@ void test_root(void) {
     TEST_CHECK_(root(4, 1).ans==(4), "root(%d,%d).ans==%d", 4, 1, 4);
 
     // Root of negative numbers
-    TEST_CHECK_(root(-8, 3).ans==(-2), "root(%d,%d).ans==%d", -8, 3, -2);
+    TEST_CHECK_(absolute(root(-8, 3).ans-(-2)).ans<eps, "root(%d,%d).ans==%d", -8, 3, -2);
     TEST_CHECK_(root(-2, 1).ans==(-2), "root(%d,%d).ans==%d", -2, 1, -2);
 
     // Root of real numbers
@@ -171,7 +171,7 @@ void test_root(void) {
 
     // TODO Check disallowed numbers (n=-1, n=0)
     TEST_CHECK_(root(9, -1).fail==(1), "root(%d,%d).fail==%d", 9, -1, 1);
-    TEST_CHECK_(root(16, 0).fail==(1), "root(%d,%d).ans==%d", 16, 0, 1);
+    TEST_CHECK_(root(16, 0).fail==(1), "root(%d,%d).fail==%d", 16, 0, 1);
 }
 
 void test_absolute(void) {
