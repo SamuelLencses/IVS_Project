@@ -1,5 +1,5 @@
 #include "math_lib.h"
-
+#include <math.h>
 
 // Soucet
 result_d add(long double a, long double b) {
@@ -93,11 +93,25 @@ result_d power(long double x, int n) {
 // Odmocnina
 result_d root(long double x, int n) {
     result_d res;
-    // Code here
-    
-    // float m = (float) n;
-    // res.ans = (power(m ,1.0 / x).ans);
-    // return res;
+
+    if (n < 1)
+    {
+        res.fail = 1;
+        return res;
+    }
+
+    if (n % 2 == 1 && x < 0)
+    {
+        res.fail = 0;
+        res.ans = -pow(absolute(x).ans, 1.0/n);
+    }
+    else
+    {   
+        res.fail = 0;
+        res.ans = (pow(x ,1.0 / n));    
+    }
+
+    return res;
     
     
     
