@@ -17,7 +17,7 @@ int main() {
     }
 
     // The actual result
-    double result = sqrt(mul(dv(1, size-1).ans, sub(squareSum(input, size), mul(size, mul(avg(input, size), avg(input, size)).ans).ans).ans).ans);
+    double result = root(mul(dv(1, size-1).ans, sub(squareSum(input, size), mul(size, mul(avg(input, size), avg(input, size)).ans).ans).ans).ans, 2).ans;
 
     printf("%f\n", result);
 
