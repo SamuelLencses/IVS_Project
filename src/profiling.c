@@ -1,3 +1,8 @@
+// Profiling program
+// 2nd IVS Project
+// Author: Kryštof Paulík, xpauli08
+// Date: 2022-04-20
+
 #include <stdio.h>
 #include "math_lib.h"
 
@@ -12,9 +17,6 @@ int main() {
     // Max size of 1000 integers
     int input[1000];
     int size = getInput(input);
-
-    // The actual result
-    //double result = root(mul(dv(1, size-1).ans, sub(squareSum(input, size), mul(size, mul(avg(input, size), avg(input, size)).ans).ans).ans).ans, 2).ans;
 
     // Print out the result
     printf("%f\n", getAns(input, size));

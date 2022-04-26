@@ -1,3 +1,8 @@
+# Makefile
+# 2nd IVS Project
+# Author: Kryštof Paulík, xpauli08
+# Date: 2022-03-30
+
 CC = gcc
 CFLAGS = -std=c99
 
