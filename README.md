@@ -13,4 +13,4 @@ Smells Like Team Spirit
 Licence
 -------
 
-Tento program je poskytovan pod licencí MIT.
+Tento program je poskytován pod licencí MIT.
