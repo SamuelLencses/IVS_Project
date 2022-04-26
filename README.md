@@ -1,7 +1,7 @@
-Prostredi
+Prostředí
 ---------
 
-Autori
+Autoři
 ------
 
 Smells Like Team Spirit
