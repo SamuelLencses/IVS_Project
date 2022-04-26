@@ -5,7 +5,7 @@ Autori
 ------
 
 Smells Like Team Spirit
-- xlogin02 jmeno prijmeni
+- xlencs00 Samuel Lencsés
 - xpauli08 Kryštof Paulík 
 - xlogin03 jmeno prijmeni 
 - xlogin04 jmeno prijmeni 
