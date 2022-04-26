@@ -1,1 +1,8 @@
+V přiložených grafech můžeme vidět funkci programu na výpočet směrodatné odchylky pro vstupy o velikosti 10, 100 a 1000 čísel.
+Je zde vidět, že nejvíce času tráví program načítáním čísel ze vstupu.
 
+Jelikož je program tvořen s maximální délkou vstupu 1000 čísel, při jeho optimalizaci bychom se určitě
+zaměřili na dynamické zjišťování velikosti vstupu pro libovolný počet čísel.
+
+Při profilingu tohoto programu jsme také přišli na to, že voláme funkci avg (ve které také program tráví nemalé
+procento času) zbytečne dvakrát a danou optimalizaci provedli.
