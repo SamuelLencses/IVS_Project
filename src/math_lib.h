@@ -7,7 +7,7 @@ typedef struct {
 // Vysledek s int
 typedef struct {
     int fail;
-    int ans;
+    long long int ans;
 } result_i;
 
 // Deklarace funkci

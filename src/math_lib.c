@@ -112,34 +112,6 @@ result_d root(long double x, int n) {
     }
 
     return res;
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    // if(x == 0 || x == 0.0)
-    // {
-    //     res.ans = 0;
-    //     res.fail = 0;
-    //     return res;
-    // }
-    // double base = x;
-    // for (int i = 0; i < 100; i++) {
-    //     result_d temp = power(base, n - 1);
-    //     x = 1.0 / n * ((n - 1) * base + x / temp.ans);
-    // }
-    // res.ans = x;
-    // res.fail = 0;
-    // return res;
-
-
 
 }
 
