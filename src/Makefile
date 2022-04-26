@@ -8,6 +8,9 @@ CFLAGS = -std=c99
 
 all: main profile
 
+run: main
+	./main
+
 main: main.o math_lib.o
 	$(CC) $(CFLAGS) -o main main.o math_lib.o -lm
 
