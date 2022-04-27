@@ -1,0 +1,56 @@
+Predbežný plán II. projektu IVS
+---------------------------------------------------
+xlencs00,xpauli08,xnovel00,xhalad03
+
+17.03.2022
+
+---------------------------------------------------
+Stanovené termíny
+
+09.03.2022 -> vytvorenie repozitára
+17.03.2022 -> plán projeku
+27.03.2022 -> štruktúra repozitára
+01.04.2022 -> TDD
+07.04.2022 -> funkcie 1/2
+14.04.2022 -> GUI + funkcie 2/2
+18.04.2022 -> profiling
+20.04.2022 -> inštalátor/odinštalátor + dokumentácia
+26.04.2022 -> finišovanie ostatných úloh (mockup)
+29.04.2022 07:00 -> odovzdanie projektu
+20.05.2022 -> hotová prezentácia
+
+---------------------------------------------------
+Priradenie úloh
+
+xpauli08 - testovanie, profiling, kontrola dokumentácie
+xlencs00 - inštalátor/odinštalátor, správa repozitára, priebežná kontrola práce
+xnovel00 - source code, manuál, makefile
+xhalad03 - GUI + nápoveda, prezentácia, dokumentácia
+
+*keďže dané kategórie sú rozlične náročné, 
+tak ak niekto z tímu sa zasekne na nejakom probléme,
+ostatní sa budú snažiť pomôcť, ale zároveň
+sa primárne venovať svojmu zadaniu
+
+---------------------------------------------------
+Zvolené komunikačné kanály:
+
+* Microsoft Project
+* Doodle - úprava časov
+* Discord - pravidelné schôdzky každý štvrtok
+* Facebook 
+
+
+Stanovené pravidlá:
+
+1) Nenadávame pri práci
+2) Každý si je rovný (vzájomný rešpekt, vypočutie druhého)
+3) Neskákať do reči
+4) Demokratické hlasovanie pri rozhodnutiach
+5) Mesiace nazývame pomocou čísel (Január -> 1, Apríl -> 4, atď.)
+---------------------------------------------------
+
+Systémy pre správu verzií:
+
+Zvolili sme si GIT (Github) a úspešne sme pridali užívatela "ivskontrola", pomocou ktorého môžu vyučujúci nahliadnuť do nášho repozitára.
+---------------------------------------------------
