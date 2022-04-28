@@ -8,8 +8,8 @@ Autoři
 Smells Like Team Spirit
 - xlencs00 Samuel Lencsés
 - xpauli08 Kryštof Paulík 
-- xnovel00 jmeno prijmeni 
-- xhalad03 jmeno prijmeni 
+- xnovel00 Ondrej Novelinka 
+- xhalad03 Veronika Haladová 
 
 Licence
 -------
