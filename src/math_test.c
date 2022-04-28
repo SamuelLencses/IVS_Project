@@ -30,10 +30,10 @@ void test_add(void) {
     TEST_CHECK_(add(2, -3).ans==(-1), "add(%d,%d).ans==%d", 2, -3, -1);
 
     // Add real numbers
-    TEST_CHECK_(add(0, 3.14).ans==(3.14), "add(%d,%.2lf).ans==%.2lf", 0, 3.14, 3.14);
-    TEST_CHECK_(add(3.14, 0).ans==(3.14), "add(%.2lf,%d).ans==%.2lf", 3.14, 0, 3.14);
-    TEST_CHECK_(add(3.14, 4.2).ans==(7.34), "add(%.2lf,%.1lf).ans==%.2lf", 3.14, 4.2, 7.34);
-    TEST_CHECK_(add(3.14, -4.2).ans==(-1.06), "add(%.2lf,%.1lf).ans==%.2lf", 3.14, -4.2, -1.06);
+    TEST_CHECK_(absolute(add(0, 3.14).ans-(3.14)).ans<eps, "add(%d,%.2lf).ans==%.2lf", 0, 3.14, 3.14);
+    TEST_CHECK_(absolute(add(3.14, 0).ans-(3.14)).ans<eps, "add(%.2lf,%d).ans==%.2lf", 3.14, 0, 3.14);
+    TEST_CHECK_(absolute(add(3.14, 4.2).ans-(7.34)).ans<eps, "add(%.2lf,%.1lf).ans==%.2lf", 3.14, 4.2, 7.34);
+    TEST_CHECK_(absolute(add(3.14, -4.2).ans-(-1.06)).ans<eps, "add(%.2lf,%.1lf).ans==%.2lf", 3.14, -4.2, -1.06);
 }
 
 void test_sub(void) {
@@ -56,10 +56,10 @@ void test_sub(void) {
     TEST_CHECK_(sub(3, -2).ans==(5), "sub(%d,%d).ans==%d", 3, -2, 5);
 
     // Sub real numbers
-    TEST_CHECK_(sub(0, 3.14).ans==(-3.14), "sub(%d,%.2lf).ans==%.2lf", 0, 3.14, -3.14);
-    TEST_CHECK_(sub(3.14, 0).ans==(3.14), "sub(%.2lf,%d).ans==%.2lf", 3.14, 0, 3.14);
-    TEST_CHECK_(sub(3.14, 4.2).ans==(-1.06), "sub(%.2lf,%.1lf).ans==%.2lf", 3.14, 4.2, -1.06);
-    TEST_CHECK_(sub(3.14, -4.2).ans==(7.34), "sub(%.2lf,%.1lf).ans==%.2lf", 3.14, -4.2, 7.34);
+    TEST_CHECK_(absolute(sub(0, 3.14).ans-(-3.14)).ans<eps, "sub(%d,%.2lf).ans==%.2lf", 0, 3.14, -3.14);
+    TEST_CHECK_(absolute(sub(3.14, 0).ans-(3.14)).ans<eps, "sub(%.2lf,%d).ans==%.2lf", 3.14, 0, 3.14);
+    TEST_CHECK_(absolute(sub(3.14, 4.2).ans-(-1.06)).ans<eps, "sub(%.2lf,%.1lf).ans==%.2lf", 3.14, 4.2, -1.06);
+    TEST_CHECK_(absolute(sub(3.14, -4.2).ans-(7.34)).ans<eps, "sub(%.2lf,%.1lf).ans==%.2lf", 3.14, -4.2, 7.34);
 }
 
 void test_mul(void) {
@@ -85,8 +85,8 @@ void test_mul(void) {
     // Multiply real numbers
     TEST_CHECK_(mul(0, 3.14).ans==(0), "mul(%d,%.2lf).ans==%d", 0, 3.14, 0);
     TEST_CHECK_(mul(3.14, 0).ans==(0), "mul(%.2lf,%d).ans==%d", 3.14, 0, 0);
-    TEST_CHECK_(mul(3.14, 4.2).ans==(13.188), "mul(%.2lf,%.1lf).ans==%.2lf", 3.14, 4.2, 13.188);
-    TEST_CHECK_(mul(3.14, -4.2).ans==(-13.188), "mul(%.2lf,%.1lf).ans==%.2lf", 3.14, -4.2, 13.188);
+    TEST_CHECK_(absolute(mul(3.14, 4.2).ans-(13.188)).ans<eps, "mul(%.2lf,%.1lf).ans==%.2lf", 3.14, 4.2, 13.188);
+    TEST_CHECK_(absolute(mul(3.14, -4.2).ans-(-13.188)).ans<eps, "mul(%.2lf,%.1lf).ans==%.2lf", 3.14, -4.2, -13.188);
 }
 
 void test_dv(void) {
