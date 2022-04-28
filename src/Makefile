@@ -48,7 +48,7 @@ makepack:
 	mkdir -p ../../xlencs00_xnovel00_xhalad03_xpauli08/repo
 	mkdir ../../xlencs00_xnovel00_xhalad03_xpauli08/install
 	mkdir ../../xlencs00_xnovel00_xhalad03_xpauli08/doc
-	cp -a ../../ivs_project/. ../../xlencs00_xnovel00_xhalad03_xpauli08/repo
+	cp -a ../../IVS_Project/. ../../xlencs00_xnovel00_xhalad03_xpauli08/repo
 	cp -a ../doc/. ../../xlencs00_xnovel00_xhalad03_xpauli08/doc/
 	cp -a ../install/. ../../xlencs00_xnovel00_xhalad03_xpauli08/install/
 
