@@ -1,4 +1,4 @@
-
-
-
-
+xlencs00 110 (repozitár, testovanie funkčnosti, inštalátor/odinštalátor, správa repozitára, priebežná kontrola práce, časť manuálu)
+xpauli08 170 (testovanie (TDD), profilling, makefile, časť manuálu, "GUI", Doxygen)
+xhalad03 30 (návrh mockupu, návrh GUI)
+xnovel00 90 (prezentácia, matematická knižnica, kontrola dokumentace)
