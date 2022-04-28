@@ -3,49 +3,191 @@
 // Author: Kryštof Paulík, xpauli08
 // Date: 2022-04-27
 
+/***************************************************************************************************************************************
+ * Name of the project: IVS Project II
+ * File: main.c
+ * Date: 2022-04-27
+ * Last change: 2022-04-26
+ * Author: Kryštof Paulík (xpauli08)
+ * 
+ * Description: Console Calculator main program
+ * 
+ * *************************************************************************************************************************************
+/**
+ * @file main.c
+ * 
+ * @brief Console Calculator main program
+ * @author Kryštof Paulík (xpauli08)
+ * 
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include "math_lib.h"
 
+/**
+ * @brief Prints out the main (empty) screen of the calculator
+ * 
+ */
 void printEmpty();
+/**
+ * @brief Prints out the help screen of the calculator
+ * 
+ */
 void printHelp();
+/**
+ * @brief Prints out the invalid input screen of the calculator
+ * 
+ */
 void printInvalidInput();
 
+/**
+ * @brief Prints out the main plus function screen of the calculator
+ * 
+ */
 void opPlus();
+
+/**
+ * @brief Subfunction of opPlus(), prints out the first number screen of the calculator
+ * 
+ * @param a First number to be added
+ */
 void printFirstPlus(long double a);
+
+/**
+ * @brief Subfunction of opPlus(), prints out the second number + result screen of the calculator
+ * 
+ * @param a First number to be added
+ * @param b Second number to be added
+ */
 void printSecondPlus(long double a, long double b);
 
+/**
+ * @brief Prints out the minus function screen of the calculator
+ * 
+ */
 void opMinus();
+
+/**
+ * @brief Subfunction of opMinus(), prints out the first number screen of the calculator
+ * 
+ * @param a First number to substract from
+ */
 void printFirstMinus(long double a);
+
+/**
+ * @brief Subfunction of opMinus(), prints out the second number + result screen of the calculator
+ * 
+ * @param a First number to subtract from
+ * @param b Second number to be subtracted from the first
+ */
 void printSecondMinus(long double a, long double b);
 
+/**
+ * @brief Prints out the mutiplication function screen of the calculator
+ * 
+ */
 void opMul();
+
+/**
+ * @brief Subfunction of opMul(), prints out the first number screen of the calculator
+ * 
+ * @param a First number to be multiplied
+ */
 void printFirstMul(long double a);
+
+/**
+ * @brief Subfunction of opMul(), prints out the second number + result screen of the calculator
+ * 
+ * @param a First number to be multiplied
+ * @param b Second number to be multiplied
+ */
 void printSecondMul(long double a, long double b);
 
+/**
+ * @brief Prints out the division function screen of the calculator
+ * 
+ */
 void opDiv();
+
+/**
+ * @brief Subfunction of opDiv(), prints out the first number screen of the calculator
+ * 
+ * @param a First number, dividend
+ */
 void printFirstDiv(long double a);
+
+/**
+ * @brief Subfunction of opDiv(), prints out the first number screen of the calculator
+ * 
+ * @param a First number, dividend
+ * @param b Second number, divider
+ */
 void printSecondDiv(long double a, long double b);
 
+/**
+ * @brief Prints out the power function screen of the calculator
+ * 
+ */
 void opPow();
+
+/**
+ * @brief Subfunction of opPow(), prints out the first number screen of the calculator
+ * 
+ * @param a First number, base
+ */
 void printFirstPow(long double a);
+
+/**
+ * @brief Subfunction of opPow(), prints out the first number screen of the calculator
+ * 
+ * @param a First number, base
+ * @param b Second number, exponent
+ */
 void printSecondPow(long double a, long double b);
 
+/**
+ * @brief Prints out the root function screen of the calculator
+ * 
+ */
 void opRoot();
+
+/**
+ * @brief Subfunction of opRoot(), prints out the first number screen of the calculator
+ * 
+ * @param a First number, base
+ */
 void printFirstRoot(long double a);
+
+/**
+ * @brief Subfunction of opRoot(), prints out the first number screen of the calculator
+ * 
+ * @param a First number, base
+ * @param b Second number, exponent
+ */
 void printSecondRoot(long double a, long double b);
 
+/**
+ * @brief Prints out the absolute value function screen of the calculator
+ * 
+ */
 void opAbs();
 
+/**
+ * @brief Prints out the factorial function screen of the calculator
+ * 
+ */
 void opFact();
 
 int main()
 {
-    char input[20];
+    char input[20]; // String for loading input
 
     printEmpty();
 
+
+    // Main loop for using the calculator
     while (1)
     {
         scanf("%20s", input);
