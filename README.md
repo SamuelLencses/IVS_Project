@@ -11,11 +11,6 @@ Smells Like Team Spirit
 - xnovel00 Ondrej Novelinka 
 - xhalad03 Veronika Haladová 
 
-Poznámky
---------
-
-Projekt je psaný pro Linux, ale instalátor je psaný pro Windows.
-
 Licence
 -------
 
