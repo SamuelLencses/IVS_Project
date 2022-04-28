@@ -40,7 +40,7 @@ doc: Doxyfile
 pack: doc makepack xlencs00_xnovel00_xhalad03_xpauli08.zip
 
 xlencs00_xnovel00_xhalad03_xpauli08.zip:
-	rm -rf ../../xlencs00_xnovel00_xhalad03_xpauli08/repo/installer
+	rm -rf ../../xlencs00_xnovel00_xhalad03_xpauli08/repo/install
 	rm -rf ../../xlencs00_xnovel00_xhalad03_xpauli08/repo/doc
 	cd ../.. && zip -r $@ xlencs00_xnovel00_xhalad03_xpauli08
 
