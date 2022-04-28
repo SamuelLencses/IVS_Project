@@ -1,5 +1,6 @@
 Prostředí
 ---------
+Ubuntu 64bit
 
 Autoři
 ------
