@@ -50,7 +50,7 @@ makepack:
 	mkdir ../../xlencs00_xnovel00_xhalad03_xpauli08/doc
 	cp -a ../../IVS_Project/. ../../xlencs00_xnovel00_xhalad03_xpauli08/repo
 	cp -a ../doc/. ../../xlencs00_xnovel00_xhalad03_xpauli08/doc/
-	cp -a ../install/. ../../xlencs00_xnovel00_xhalad03_xpauli08/install/
+	cp -a ../installer/. ../../xlencs00_xnovel00_xhalad03_xpauli08/install/
 
 # smaze vsechny soubory, co nemaji byt odevzdany
 clean:
