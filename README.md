@@ -8,10 +8,10 @@ Autoři
 Smells Like Team Spirit
 - xlencs00 Samuel Lencsés
 - xpauli08 Kryštof Paulík 
-- xlogin03 jmeno prijmeni 
-- xlogin04 jmeno prijmeni 
+- xnovel00 jmeno prijmeni 
+- xhalad03 jmeno prijmeni 
 
 Licence
 -------
 
-Tento program je poskytován pod licencí MIT.
+Tento program je poskytován pod licencí GNU GPL v.3.
