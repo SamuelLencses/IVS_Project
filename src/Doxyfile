@@ -2,9 +2,9 @@
 # Project related configuration options
 #---------------------------------------------------------------------------
 DOXYFILE_ENCODING      = UTF-8
-PROJECT_NAME           = Console Calculator
+PROJECT_NAME           = "Console Calculator"
 PROJECT_NUMBER         = 1.0
-PROJECT_BRIEF          = Colsole Calculator by Smells Like Team Spirit
+PROJECT_BRIEF          = "Console Calculator by Smells Like Team Spirit"
 PROJECT_LOGO           =
 OUTPUT_DIRECTORY       = doxygen_docs
 CREATE_SUBDIRS         = NO
@@ -28,7 +28,7 @@ INHERIT_DOCS           = YES
 SEPARATE_MEMBER_PAGES  = NO
 TAB_SIZE               = 4
 ALIASES                =
-OPTIMIZE_OUTPUT_FOR_C  = NO
+OPTIMIZE_OUTPUT_FOR_C  = YES
 OPTIMIZE_OUTPUT_JAVA   = NO
 OPTIMIZE_FOR_FORTRAN   = NO
 OPTIMIZE_OUTPUT_VHDL   = NO
